@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SmoothCheckBox">
+        <!--点击动画持续时间-->
+        <attr name="duration" format="integer"/>
+        <!--未选中时边框宽度-->
+        <attr name="stroke_width" format="dimension"/>
+        <!--对勾颜色-->
+        <attr name="color_tick" format="color"/>
+        <!--选中时填充颜色-->
+        <attr name="color_checked" format="color"/>
+        <!--未选中时填充颜色-->
+        <attr name="color_unchecked" format="color"/>
+        <!--未选中时边框颜色-->
+        <attr name="color_unchecked_stroke" format="color"/>
+        <!--形状-->
+        <attr name ="shape_type" format="enum">
+            <enum name="circle" value="1"/>
+            <enum name="rect" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ElasticScrollView">
+        <!--缩放控件ID-->
+        <attr name="elasticId" format="reference" />
+    </declare-styleable>
+
+</resources>
