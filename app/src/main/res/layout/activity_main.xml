@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <TextView
             android:id="@+id/tvElasticTips"
             android:layout_width="wrap_content"
@@ -22,13 +21,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.github.yjz.widget.checkbox.SmoothCheckBox
+            android:id="@+id/scbCircle"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/scb"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/scbRect"
             app:layout_constraintTop_toBottomOf="@id/tvElasticTips" />
+
+
+        <com.github.yjz.widget.checkbox.SmoothCheckBox
+            android:id="@+id/scbRect"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toRightOf="@id/scbCircle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvElasticTips"
+            app:yjz_shape_type="rect" />
 
 
         <Button
@@ -39,7 +51,7 @@
             android:text="弹出PopWindow"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scb" />
+            app:layout_constraintTop_toBottomOf="@id/scbCircle" />
 
 
         <com.github.yjz.widget.button.DotsLoadingButton
@@ -52,6 +64,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnRequest" />
 
+
+        <include
+            layout="@layout/state_button_example"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnDotsLoading" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -73,13 +73,13 @@ public class SmoothCheckBox extends View implements Checkable {
     private void init(AttributeSet attrs) {
 
         TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.SmoothCheckBox);
-        int tickColor = ta.getColor(R.styleable.SmoothCheckBox_color_tick, COLOR_TICK);
-        mAnimDuration = ta.getInt(R.styleable.SmoothCheckBox_duration, DEF_ANIM_DURATION);
-        mFloorColor = ta.getColor(R.styleable.SmoothCheckBox_color_unchecked_stroke, COLOR_FLOOR_UNCHECKED);
-        mCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_color_checked, COLOR_CHECKED);
-        mUnCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_color_unchecked, COLOR_UNCHECKED);
-        mStrokeWidth = ta.getDimensionPixelSize(R.styleable.SmoothCheckBox_stroke_width, dp2px(getContext(), 0));
-        shapeType = ta.getInt(R.styleable.SmoothCheckBox_shape_type,1);
+        int tickColor = ta.getColor(R.styleable.SmoothCheckBox_yjz_color_tick, COLOR_TICK);
+        mAnimDuration = ta.getInt(R.styleable.SmoothCheckBox_yjz_duration, DEF_ANIM_DURATION);
+        mFloorColor = ta.getColor(R.styleable.SmoothCheckBox_yjz_color_unchecked_stroke, COLOR_FLOOR_UNCHECKED);
+        mCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_yjz_color_checked, COLOR_CHECKED);
+        mUnCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_yjz_color_unchecked, COLOR_UNCHECKED);
+        mStrokeWidth = ta.getDimensionPixelSize(R.styleable.SmoothCheckBox_yjz_stroke_width, dp2px(getContext(), 0));
+        shapeType = ta.getInt(R.styleable.SmoothCheckBox_yjz_shape_type,1);
         ta.recycle();
 
         mFloorUnCheckedColor = mFloorColor;

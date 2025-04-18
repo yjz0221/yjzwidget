@@ -143,7 +143,7 @@ public class ElasticScrollView extends ScrollView {
 
         if (attrs != null){
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ElasticScrollView);
-            elasticId = a.getResourceId(R.styleable.ElasticScrollView_elasticId, 0);
+            elasticId = a.getResourceId(R.styleable.ElasticScrollView_yjz_elasticId, 0);
             a.recycle();
         }
     }

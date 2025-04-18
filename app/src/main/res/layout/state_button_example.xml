@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_extend"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:text="StateButton示例"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/text_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="change text color"
+            app:yjz_normalBackgroundColor="@color/colorPrimary"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedBackgroundColor="@color/colorPrimary"
+            app:yjz_pressedTextColor="@android:color/holo_red_light"
+            app:yjz_unableBackgroundColor="@color/colorPrimary"
+            app:yjz_unableTextColor="@android:color/holo_orange_dark" />
+
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/background_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="change background"
+            android:textColor="@android:color/white"
+            app:yjz_normalBackgroundColor="@color/colorPrimary"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_unableBackgroundColor="@android:color/holo_red_light" />
+
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/radius_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="with radius"
+            android:textColor="@android:color/white"
+            app:yjz_normalBackgroundColor="@color/colorPrimary"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_radius="10dp"
+            app:yjz_unableBackgroundColor="@android:color/holo_red_light" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/round_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="round radius"
+            android:textColor="@android:color/white"
+            app:yjz_normalBackgroundColor="@color/colorPrimary"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_radius="2dp"
+            app:yjz_round="true"
+            app:yjz_unableBackgroundColor="@android:color/holo_red_light" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/different_radius_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="different_radius"
+            android:textColor="@android:color/white"
+            app:yjz_normalBackgroundColor="@color/colorPrimary"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_unableBackgroundColor="@android:color/holo_red_light" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/dash_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="with dash"
+            app:yjz_normalStrokeColor="@android:color/white"
+            app:yjz_normalStrokeWidth="2dp"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedStrokeColor="@android:color/holo_red_light"
+            app:yjz_pressedStrokeWidth="2dp"
+            app:yjz_pressedTextColor="@android:color/holo_red_light"
+            app:yjz_radius="5dp"
+            app:yjz_strokeDashGap="5dp"
+            app:yjz_strokeDashWidth="5dp"
+            app:yjz_unableStrokeColor="@android:color/holo_orange_dark"
+            app:yjz_unableStrokeWidth="2dp"
+            app:yjz_unableTextColor="@android:color/holo_orange_dark" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/stroke_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="with stroke"
+            app:yjz_normalStrokeColor="@android:color/white"
+            app:yjz_normalStrokeWidth="2dp"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedStrokeColor="@android:color/holo_red_light"
+            app:yjz_pressedStrokeWidth="2dp"
+            app:yjz_pressedTextColor="@android:color/holo_red_light"
+            app:yjz_radius="5dp"
+            app:yjz_unableStrokeColor="@android:color/holo_orange_dark"
+            app:yjz_unableStrokeWidth="2dp"
+            app:yjz_unableTextColor="@android:color/holo_orange_dark" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/stroke_background_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="keep stroke"
+            app:yjz_normalStrokeColor="@android:color/white"
+            app:yjz_normalStrokeWidth="2dp"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_pressedStrokeColor="@android:color/white"
+            app:yjz_pressedStrokeWidth="2dp"
+            app:yjz_pressedTextColor="@android:color/white"
+            app:yjz_radius="5dp" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/stroke_background_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="stroke_background"
+            app:yjz_normalStrokeColor="@android:color/white"
+            app:yjz_normalStrokeWidth="2dp"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_pressedTextColor="@android:color/white"
+            app:yjz_radius="5dp" />
+
+        <com.github.yjz.widget.button.state_button.StateButton
+            android:id="@+id/stroke_background_animation_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="stroke_background_animation"
+            app:yjz_animationDuration="200"
+            app:yjz_normalStrokeColor="@android:color/white"
+            app:yjz_normalStrokeWidth="2dp"
+            app:yjz_normalTextColor="@android:color/white"
+            app:yjz_pressedBackgroundColor="@color/colorPrimaryDark"
+            app:yjz_pressedTextColor="@android:color/white"
+            app:yjz_radius="5dp" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

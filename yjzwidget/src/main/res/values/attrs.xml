@@ -3,19 +3,19 @@
 
     <declare-styleable name="SmoothCheckBox">
         <!--点击动画持续时间-->
-        <attr name="duration" format="integer"/>
+        <attr name="yjz_duration" format="integer"/>
         <!--未选中时边框宽度-->
-        <attr name="stroke_width" format="dimension"/>
+        <attr name="yjz_stroke_width" format="dimension"/>
         <!--对勾颜色-->
-        <attr name="color_tick" format="color"/>
+        <attr name="yjz_color_tick" format="color"/>
         <!--选中时填充颜色-->
-        <attr name="color_checked" format="color"/>
+        <attr name="yjz_color_checked" format="color"/>
         <!--未选中时填充颜色-->
-        <attr name="color_unchecked" format="color"/>
+        <attr name="yjz_color_unchecked" format="color"/>
         <!--未选中时边框颜色-->
-        <attr name="color_unchecked_stroke" format="color"/>
+        <attr name="yjz_color_unchecked_stroke" format="color"/>
         <!--形状-->
-        <attr name ="shape_type" format="enum">
+        <attr name ="yjz_shape_type" format="enum">
             <enum name="circle" value="1"/>
             <enum name="rect" value="2"/>
         </attr>
@@ -24,7 +24,67 @@
 
     <declare-styleable name="ElasticScrollView">
         <!--缩放控件ID-->
-        <attr name="elasticId" format="reference" />
+        <attr name="yjz_elasticId" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StateButton">
+        <!-- 正常状态下文字颜色 -->
+        <attr name="yjz_normalTextColor" format="color|reference"/>
+        <!-- 按压状态下文字颜色 -->
+        <attr name="yjz_pressedTextColor" format="color|reference"/>
+        <!-- 不可用状态下文字颜色 -->
+        <attr name="yjz_unableTextColor" format="color|reference"/>
+
+        <!-- 设置dash宽度 -->
+        <attr name="yjz_strokeDashWidth" format="dimension|reference"/>
+        <!-- 设置dash之间的间距 -->
+        <attr name="yjz_strokeDashGap" format="dimension|reference"/>
+        <!--设置正常显示的边框宽度-->
+        <attr name="yjz_normalStrokeWidth" format="dimension|reference"/>
+        <!--设置按下时显示的边框宽度-->
+        <attr name="yjz_pressedStrokeWidth" format="dimension|reference"/>
+        <!--设置不可用时（enable = false）显示的边框宽度-->
+        <attr name="yjz_unableStrokeWidth" format="dimension|reference"/>
+        <!--设置正常显示的边框颜色-->
+        <attr name="yjz_normalStrokeColor" format="color|reference"/>
+        <!-- 设置按下时显示的边框颜色 -->
+        <attr name="yjz_pressedStrokeColor" format="color|reference"/>
+        <!-- 设置不可用时（enable = false）显示的边框颜色 -->
+        <attr name="yjz_unableStrokeColor" format="color|reference"/>
+
+        <!-- 设置正常显示的背景颜色 -->
+        <attr name="yjz_normalBackgroundColor" format="color|reference"/>
+        <!-- 设置按下状态显示的背景颜色 -->
+        <attr name="yjz_pressedBackgroundColor" format="color|reference"/>
+        <!-- 设置不可用时（enable = false）背景颜色 -->
+        <attr name="yjz_unableBackgroundColor" format="color|reference"/>
+
+        <!--设置圆角度-->
+        <attr name="yjz_radius" format="dimension|reference"/>
+        <!-- 设置左右为半圆， 不用计算radius -->
+        <attr name="yjz_round" format="boolean|reference"/>
+
+        <!--设置背景切换动画时长-->
+        <attr name="yjz_animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StateImageView">
+        <attr name="yjz_normalBackground" format="color|reference"/>
+        <attr name="yjz_pressedBackground" format="color|reference"/>
+        <attr name="yjz_unableBackground" format="color|reference"/>
+        <!-- animation duration -->
+        <attr name="yjz_ivAnimationDuration" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingButton">
+        <attr name="yjz_text" format="string" localization="suggested" />
+        <attr name="yjz_textColor" format="color" />
+        <attr name="yjz_backgroundColor" format="color"/>
+        <attr name="yjz_background" format="reference"/>
+        <attr name="yjz_textSize" format="dimension"/>
+        <attr name="yjz_progressColor" format="color"/>
     </declare-styleable>
 
 </resources>
