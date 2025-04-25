@@ -78,13 +78,13 @@
         <attr name="yjz_ivAnimationDuration" format="integer|reference"/>
     </declare-styleable>
 
-    <declare-styleable name="LoadingButton">
-        <attr name="yjz_text" format="string" localization="suggested" />
-        <attr name="yjz_textColor" format="color" />
-        <attr name="yjz_backgroundColor" format="color"/>
-        <attr name="yjz_background" format="reference"/>
-        <attr name="yjz_textSize" format="dimension"/>
-        <attr name="yjz_progressColor" format="color"/>
+
+    <declare-styleable name="YjzLoadingButton">
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="yjz_loadingColor" format="color|reference"/>
     </declare-styleable>
+
 
 </resources>

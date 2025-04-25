@@ -13,4 +13,8 @@
     <color name="colorOnPrimary">@color/white</color>
     <color name="colorPrimaryDark">@color/black</color>
 
+
+    <color name="btn_disable">#B3B3B3</color>
+    <color name="btn_pressed">#656a6e</color>
+
 </resources>
