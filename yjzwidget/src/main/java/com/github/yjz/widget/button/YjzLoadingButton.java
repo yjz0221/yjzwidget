@@ -13,6 +13,7 @@ import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -124,7 +125,7 @@ public class YjzLoadingButton extends FrameLayout {
 
     public void setTextSize(int textSize) {
         this.textSize = textSize;
-        tvContent.setTextSize(textSize);
+        tvContent.setTextSize(TypedValue.COMPLEX_UNIT_PX,textSize);
     }
 
     private void setLoadingColor(int colorValue) {
@@ -186,7 +187,7 @@ public class YjzLoadingButton extends FrameLayout {
 
         //设置自定义属性
         tvContent.setText(text);
-        tvContent.setTextSize(textSize);
+        setTextSize(textSize);
         tvContent.setTextColor(textColor);
         setLoadingColor(loadingColor);
 

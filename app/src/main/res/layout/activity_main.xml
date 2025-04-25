@@ -64,7 +64,7 @@
             android:padding="10dp"
             android:text="点击加载"
             android:textColor="@android:color/white"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:yjz_loadingColor="#00FF00"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
