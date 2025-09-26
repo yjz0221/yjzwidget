@@ -27,9 +27,9 @@ import androidx.annotation.Nullable;
 import com.github.yjz.widget.R;
 
 /**
- * 作者:cl
+ * 作者:yjz
  * 创建日期：2025/4/25
- * 描述: ProgressBar + TextView加载按钮
+ * 描述: ProgressBar + TextView加载按钮（堆叠排列）
  */
 public class YjzLoadingButton extends FrameLayout {
 
@@ -84,16 +84,19 @@ public class YjzLoadingButton extends FrameLayout {
 
     /**
      * 设置加载状态
+     *
      * @param openDarkenFilter 是否将控件背景亮度调暗，以提示用户此时不可点击
      */
     public void loading(boolean openDarkenFilter) {
         invisible(tvContent);
         visible(pbView);
+
         //调低背景亮度
-        if (openDarkenFilter){
+        if (openDarkenFilter) {
             applyDarkenFilter(getBackground());
         }
-        setClickable(false);
+
+        setEnabled(false);
     }
 
 
@@ -109,7 +112,7 @@ public class YjzLoadingButton extends FrameLayout {
         invisible(pbView);
         visible(tvContent);
         removeColorFilter(getBackground());
-        setClickable(true);
+        setEnabled(true);
     }
 
 
@@ -125,7 +128,7 @@ public class YjzLoadingButton extends FrameLayout {
 
     public void setTextSize(int textSize) {
         this.textSize = textSize;
-        tvContent.setTextSize(TypedValue.COMPLEX_UNIT_PX,textSize);
+        tvContent.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
     }
 
     private void setLoadingColor(int colorValue) {

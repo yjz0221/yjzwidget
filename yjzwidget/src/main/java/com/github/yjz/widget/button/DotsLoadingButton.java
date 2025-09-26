@@ -15,7 +15,7 @@ import com.github.yjz.widget.util.DensityUtil;
 
 
 /**
- * 作者:cl
+ * 作者:yjz
  * 创建日期：2025/2/25
  * 描述: 继承Button实现的带有文字和淡入淡出点的加载按钮
  */

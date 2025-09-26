@@ -87,4 +87,51 @@
     </declare-styleable>
 
 
+
+    <declare-styleable name="SimpleCircleImageView">
+        <!-- 边框 -->
+        <attr name="yjz_civ_border" format="boolean" /> <!--是否显示边框-->
+        <attr name="yjz_civ_border_width" format="dimension" /> <!--边框宽度-->
+        <attr name="yjz_civ_border_color" format="color" /> <!--边框颜色-->
+        <attr name="yjz_civ_border_color_start" format="color" /> <!--边框渐变颜色-->
+        <attr name="yjz_civ_border_color_end" format="color" />
+        <attr name="yjz_civ_border_color_direction">
+            <flag name="left_to_right" value="1" />
+            <flag name="right_to_left" value="2" />
+            <flag name="top_to_bottom" value="3" />
+            <flag name="bottom_to_top" value="4" />
+        </attr>
+        <!-- 背景圆颜色 -->
+        <attr name="yjz_civ_circle_color" format="color" />
+        <attr name="yjz_civ_circle_color_start" format="color" />
+        <attr name="yjz_civ_circle_color_end" format="color" />
+        <attr name="yjz_civ_circle_color_direction">
+            <flag name="left_to_right" value="1" />
+            <flag name="right_to_left" value="2" />
+            <flag name="top_to_bottom" value="3" />
+            <flag name="bottom_to_top" value="4" />
+        </attr>
+        <!-- 阴影 -->
+        <attr name="yjz_civ_shadow" format="boolean" />
+        <attr name="yjz_civ_shadow_color" format="color" />
+        <attr name="yjz_civ_shadow_radius" format="dimension" />
+        <attr name="yjz_civ_shadow_gravity">
+            <flag name="center" value="1" />
+            <flag name="top" value="2" />
+            <flag name="bottom" value="3" />
+            <flag name="start" value="4" />
+            <flag name="end" value="5" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="YjzTextLoadingButton">
+        <attr name="yjz_text" format="string" localization="suggested" />
+        <attr name="yjz_textColor" format="color" />
+        <attr name="yjz_backgroundColor" format="color"/>
+        <attr name="yjz_background" format="reference"/>
+        <attr name="yjz_textSize" format="dimension"/>
+        <attr name="yjz_progressColor" format="color"/>
+    </declare-styleable>
+
 </resources>

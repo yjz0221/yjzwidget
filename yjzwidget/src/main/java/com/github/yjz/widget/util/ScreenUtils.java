@@ -16,7 +16,7 @@ import android.view.WindowManager;
 import java.lang.reflect.Method;
 
 /**
- * 作者:cl
+ * 作者:yjz
  * 创建日期：2024/12/20
  * 描述:屏幕工具
  */

@@ -19,7 +19,7 @@ import com.github.mylibdemo.R;
 import com.github.yjz.widget.util.DensityUtil;
 
 /**
- * 作者:cl
+ * 作者:yjz
  * 创建日期：2025/5/16
  * 描述:基于RecycleView子类实现嵌套滑动联动效果
  */
