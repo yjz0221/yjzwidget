@@ -62,7 +62,7 @@ public class YjzLoadingButton extends FrameLayout {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
         //重新设置ProgressBar的宽高大小
-        int minSize = (int) (Math.min(getMeasuredWidth(), getMeasuredHeight()) / 2f);
+        int minSize = (int) (Math.min(getMeasuredWidth(), getMeasuredHeight())*0.6f);
         FrameLayout.LayoutParams lp = (LayoutParams) pbView.getLayoutParams();
 
         lp.gravity = Gravity.CENTER;

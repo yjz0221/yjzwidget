@@ -28,57 +28,6 @@
     </declare-styleable>
 
 
-    <declare-styleable name="StateButton">
-        <!-- 正常状态下文字颜色 -->
-        <attr name="yjz_normalTextColor" format="color|reference"/>
-        <!-- 按压状态下文字颜色 -->
-        <attr name="yjz_pressedTextColor" format="color|reference"/>
-        <!-- 不可用状态下文字颜色 -->
-        <attr name="yjz_unableTextColor" format="color|reference"/>
-
-        <!-- 设置dash宽度 -->
-        <attr name="yjz_strokeDashWidth" format="dimension|reference"/>
-        <!-- 设置dash之间的间距 -->
-        <attr name="yjz_strokeDashGap" format="dimension|reference"/>
-        <!--设置正常显示的边框宽度-->
-        <attr name="yjz_normalStrokeWidth" format="dimension|reference"/>
-        <!--设置按下时显示的边框宽度-->
-        <attr name="yjz_pressedStrokeWidth" format="dimension|reference"/>
-        <!--设置不可用时（enable = false）显示的边框宽度-->
-        <attr name="yjz_unableStrokeWidth" format="dimension|reference"/>
-        <!--设置正常显示的边框颜色-->
-        <attr name="yjz_normalStrokeColor" format="color|reference"/>
-        <!-- 设置按下时显示的边框颜色 -->
-        <attr name="yjz_pressedStrokeColor" format="color|reference"/>
-        <!-- 设置不可用时（enable = false）显示的边框颜色 -->
-        <attr name="yjz_unableStrokeColor" format="color|reference"/>
-
-        <!-- 设置正常显示的背景颜色 -->
-        <attr name="yjz_normalBackgroundColor" format="color|reference"/>
-        <!-- 设置按下状态显示的背景颜色 -->
-        <attr name="yjz_pressedBackgroundColor" format="color|reference"/>
-        <!-- 设置不可用时（enable = false）背景颜色 -->
-        <attr name="yjz_unableBackgroundColor" format="color|reference"/>
-
-        <!--设置圆角度-->
-        <attr name="yjz_radius" format="dimension|reference"/>
-        <!-- 设置左右为半圆， 不用计算radius -->
-        <attr name="yjz_round" format="boolean|reference"/>
-
-        <!--设置背景切换动画时长-->
-        <attr name="yjz_animationDuration" format="integer|reference"/>
-
-    </declare-styleable>
-
-    <declare-styleable name="StateImageView">
-        <attr name="yjz_normalBackground" format="color|reference"/>
-        <attr name="yjz_pressedBackground" format="color|reference"/>
-        <attr name="yjz_unableBackground" format="color|reference"/>
-        <!-- animation duration -->
-        <attr name="yjz_ivAnimationDuration" format="integer|reference"/>
-    </declare-styleable>
-
-
     <declare-styleable name="YjzLoadingButton">
         <attr name="android:text" />
         <attr name="android:textColor" />
@@ -132,6 +81,15 @@
         <attr name="yjz_background" format="reference"/>
         <attr name="yjz_textSize" format="dimension"/>
         <attr name="yjz_progressColor" format="color"/>
+        <attr name="yjz_successColor" format="color" />
+        <attr name="yjz_failureColor" format="color" />
+        <attr name="yjz_displayMode" format="enum">
+            <enum name="sideBySide" value="0" />
+            <enum name="stacked" value="1" />
+        </attr>
     </declare-styleable>
+
+
+
 
 </resources>

@@ -57,7 +57,7 @@
             android:id="@+id/btnLoading"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            app:yjz_text="加载按钮一"
+            app:yjz_text="登录中"
             app:yjz_progressColor="#00FF00"
             app:yjz_background="@drawable/sl_rect_bg_btn_login"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,11 +68,10 @@
         <com.github.yjz.widget.button.YjzLoadingButton
             android:id="@+id/my_loading_button"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/sl_rect_bg_btn_login"
             android:gravity="center"
-            android:padding="10dp"
             android:text="点击加载"
             android:textColor="@android:color/white"
             android:textSize="14sp"
@@ -106,14 +105,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnDotsLoading"/>
-
-        <include
-            layout="@layout/state_button_example"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivCircleDemo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
