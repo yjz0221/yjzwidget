@@ -41,6 +41,7 @@ public class YjzLoadingButton extends FrameLayout {
     private int textSize;
     private ColorStateList textColor;
     private int loadingColor;
+    private float progressPercent = 0.65f;
 
 
     public YjzLoadingButton(@NonNull Context context) {
@@ -62,14 +63,17 @@ public class YjzLoadingButton extends FrameLayout {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
         //重新设置ProgressBar的宽高大小
-        int minSize = (int) (Math.min(getMeasuredWidth(), getMeasuredHeight())*0.6f);
-        FrameLayout.LayoutParams lp = (LayoutParams) pbView.getLayoutParams();
+        setProgressSize(getMeasuredWidth(),getMeasuredHeight());
+    }
 
-        lp.gravity = Gravity.CENTER;
-        lp.width = minSize;
-        lp.height = minSize;
 
-        pbView.setLayoutParams(lp);
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+
+        //重新设置ProgressBar的宽高大小
+        setProgressSize(w,h);
+
     }
 
     public boolean isLoading() {
@@ -131,6 +135,20 @@ public class YjzLoadingButton extends FrameLayout {
         tvContent.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
     }
 
+
+    private void setProgressSize(int width,int height){
+        FrameLayout.LayoutParams lp = (LayoutParams) pbView.getLayoutParams();
+        if (lp != null){
+            int minSize = (int) (Math.min(width, height)*progressPercent);
+
+            lp.gravity = Gravity.CENTER;
+            lp.width = minSize;
+            lp.height = minSize;
+
+            pbView.setLayoutParams(lp);
+        }
+    }
+
     private void setLoadingColor(int colorValue) {
         // 获取 ProgressBar 的不确定模式 Drawable
         Drawable indeterminateDrawable = pbView.getIndeterminateDrawable();
@@ -169,6 +187,7 @@ public class YjzLoadingButton extends FrameLayout {
         //获取尺寸值
         textSize = typedArray.getDimensionPixelOffset(R.styleable.YjzLoadingButton_android_textSize, 14);
         loadingColor = typedArray.getColor(R.styleable.YjzLoadingButton_yjz_loadingColor, Color.parseColor("#FF0000"));
+        progressPercent = typedArray.getFloat(R.styleable.YjzLoadingButton_yjz_progressSizePrecent,progressPercent);
 
         typedArray.recycle();
 

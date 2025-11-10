@@ -33,6 +33,7 @@
         <attr name="android:textColor" />
         <attr name="android:textSize" />
         <attr name="yjz_loadingColor" format="color|reference"/>
+        <attr name="yjz_progressSizePrecent" format="float"/>
     </declare-styleable>
 
 
