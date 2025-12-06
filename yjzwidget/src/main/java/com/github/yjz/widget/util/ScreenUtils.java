@@ -186,5 +186,7 @@ public class ScreenUtils {
         return activity.getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop();
     }
 
+
+
 }
 

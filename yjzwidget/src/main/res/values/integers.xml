@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_duration_medium">400</integer>
+    <integer name="anim_duration_short">250</integer>
+    <integer name="anim_duration_long">600</integer>
+
+    <integer name="anime_duration_page">@integer/anim_duration_short</integer>
+    <integer name="anime_duration_dialog">@integer/anim_duration_short</integer> <!--对话框显示隐藏动画时长-->
+</resources>

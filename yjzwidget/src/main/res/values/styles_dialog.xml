@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YjzDialogAnim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/yjz_anim_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/yjz_anim_dialog_exit</item>
+    </style>
+
+    <style name="YjzBottomDialogAnim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/yjz_anim_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/yjz_anim_slide_out_bottom</item>
+    </style>
+
+    <style name="YjzBaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/YjzDialogAnim</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 对话框的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景的模糊值 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- 没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

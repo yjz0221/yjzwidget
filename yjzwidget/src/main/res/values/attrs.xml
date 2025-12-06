@@ -34,6 +34,9 @@
         <attr name="android:textSize" />
         <attr name="yjz_loadingColor" format="color|reference"/>
         <attr name="yjz_progressSizePrecent" format="float"/>
+        <attr name="yjz_successColor" format="color|reference"/>
+        <attr name="yjz_failureColor" format="color|reference"/>
+        <attr name="yjz_autoResetDelay" format="integer"/>
     </declare-styleable>
 
 
@@ -82,12 +85,6 @@
         <attr name="yjz_background" format="reference"/>
         <attr name="yjz_textSize" format="dimension"/>
         <attr name="yjz_progressColor" format="color"/>
-        <attr name="yjz_successColor" format="color" />
-        <attr name="yjz_failureColor" format="color" />
-        <attr name="yjz_displayMode" format="enum">
-            <enum name="sideBySide" value="0" />
-            <enum name="stacked" value="1" />
-        </attr>
     </declare-styleable>
 
 
